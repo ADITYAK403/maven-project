@@ -21,7 +21,7 @@ stages
     sh 'mvn package'
     }
  } }
- stage (deploy to tomcat)
+ stage ('deploy to tomcat')
  {steps
   {
    sshagent(['tomcat-ssh'])
